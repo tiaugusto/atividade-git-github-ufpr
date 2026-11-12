@@ -52,6 +52,7 @@ git diff main..feature/pull-request
 - `docs/roteiro-do-video.md`: correspondência entre o curso e a prática.
 - `docs/registro-de-comandos.md`: registro de comandos executados e saídas.
 - `docs/experimento-dois-usuarios.md`: colaboração, push rejeitado e resolução de conflito.
+- `evidencias/historico-dois-usuarios.bundle`: histórico auditável da simulação dos dois colaboradores.
 - `docs/publicar-no-github.md`: como publicar e obter o link para a UFPR.
 - `scripts/laboratorio_dois_usuarios.py`: script repetível, com dois diretórios.
 

@@ -1,3 +1,5 @@
+Captura do grafo imediatamente antes do ultimo commit de evidencias. Para ver o grafo atualizado, execute git log --oneline --graph --decorate --all.
+
 * 1e18df1 (HEAD -> main) docs: registra comandos reais, colaboracao e entrega
 * ac5be85 test: adiciona laboratorio reproduzivel com dois usuarios
 * 8ceee5f chore: configura gitignore

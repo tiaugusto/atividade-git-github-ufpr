@@ -19,8 +19,19 @@ python3 scripts/laboratorio_dois_usuarios.py
 9. Usuário B resolve a linha manualmente, faz `git add`, `git commit` e `git push`.
 10. Usuário A executa `git pull --ff-only` e obtém a solução.
 
-A saída integral dessa simulação foi capturada no arquivo `docs/log-dois-usuarios.txt`. Há um arquivo Git bundle dentro de `arquivos_temporarios/` em cada execução do script, ignorado pelo Git; ele permite auditar o histórico do remoto simulado localmente.
+A saída integral dessa simulação foi capturada no arquivo `docs/log-dois-usuarios.txt`. O histórico Git desses dois usuários também está preservado em `evidencias/historico-dois-usuarios.bundle`, incluído no repositório, para auditoria independente. Cada nova execução do script cria ainda um bundle temporário ignorado pelo Git.
 
 ## Observação importante
 
 Esse experimento demonstra **sem usar GitHub** a semântica de `clone`, `push`, `pull`, sincronização de branches e resolução de conflito. Para satisfazer a exigência de um **link público visível**, ainda é necessário publicar este repositório no GitHub.
+
+## Verificando o histórico do experimento
+
+```bash
+git bundle verify evidencias/historico-dois-usuarios.bundle
+mkdir -p /tmp/ufpr-auditoria
+git clone evidencias/historico-dois-usuarios.bundle /tmp/ufpr-auditoria/colaboracao
+git -C /tmp/ufpr-auditoria/colaboracao log --oneline --graph --all -12
+```
+
+No histórico aparecerão commits dos dois autores e um merge com a resolução do conflito.
