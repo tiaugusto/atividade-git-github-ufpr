@@ -13,13 +13,13 @@ Abra o terminal **dentro da pasta extraída** (ela deve conter a pasta escondida
 ```bash
 git status
 git remote -v
-git remote add origin https://github.com/SEU_USUARIO/atividade-git-github-ufpr.git
+git remote add origin https://github.com/tiaugusto/atividade-git-github-ufpr.git
 git push -u origin main
 git push -u origin feature/pull-request
 git push origin feature/calculadora
 ```
 
-Substitua `SEU_USUARIO` pelo login correto. Se o GitHub pedir credenciais, autentique via navegador, Git Credential Manager ou GitHub CLI; senha normal não funciona para operações HTTPS autenticadas.
+O endereço acima usa o login GitHub `tiaugusto`. Verifique se está publicando nessa mesma conta. Se o GitHub pedir credenciais, autentique via navegador, Git Credential Manager ou GitHub CLI; senha normal não funciona para operações HTTPS autenticadas.
 
 Se `origin` já existir por algum ajuste anterior, confira a URL com `git remote -v` e altere-a conscientemente com `git remote set-url origin ...`, em vez de adicioná-lo novamente.
 
@@ -44,7 +44,7 @@ Veja se o projeto está público (ou se a professora recebeu acesso explícito, 
 Cole no UFPR Virtual:
 
 ```
-https://github.com/SEU_USUARIO/atividade-git-github-ufpr
+https://github.com/tiaugusto/atividade-git-github-ufpr
 ```
 
 Opcionalmente inclua também a URL de `pull/1` (ou o número real exibido pelo GitHub após abrir o PR).
